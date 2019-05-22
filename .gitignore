@@ -1,0 +1,42 @@
+  /.gitignore
+ /.htaccess
+ /*.htaccess
+ /.htaccess*
+ /urlrewrite.php
+ /web.config
+ /*web.config
+ /*.log
+ /*.sql
+ # exclude text files from the repository, but leave the robots.txt
+ /*.txt
+ ! /robots.txt
+ /sitemap*.xml
+ /*.dt
+ /*.tar.gz
+ /*.gz
+ /*.tar
+ /*.bak
+ /*.old
+ / * ~
+ * / _ *
+ / _ *
+ /composer.*
+
+ # we exclude the ALL bitrix folder, but below we configure the inclusion of the necessary folders
+ # or use the / local folder to completely exclude the bitrix folder
+ / bitrix / *
+ # turn on the components folder, but exclude components / bitrix
+ ! / bitrix / components
+ / bitrix / components / bitrix /
+ # turn on the php_interface folder and exclude the dbconn.php file
+ ! / bitrix / php_interface /
+ /bitrix/php_interface/dbconn.php
+ /bitrix/php_interface/*.bak
+ # include templates folder
+ ! / bitrix / templates /
+ # we exclude official and unnecessary project folders
+ / dev
+ / pma
+ / upload
+ / verstka 
+
